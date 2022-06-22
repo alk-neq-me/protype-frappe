@@ -1,0 +1,120 @@
+2022-06-16 13:50:40,741 DEBUG cd /home/scott/Documents/FrapperPy/frappe-bench && /home/scott/anaconda3/bin/virtualenv --quiet env -p python3
+2022-06-16 13:50:46,873 DEBUG cd /home/scott/Documents/FrapperPy/frappe-bench && /home/scott/Documents/FrapperPy/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2022-06-16 13:50:51,753 LOG Getting frappe
+2022-06-16 13:50:51,753 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2022-06-16 13:51:15,700 LOG Installing frappe
+2022-06-16 13:51:15,700 DEBUG cd /home/scott/Documents/FrapperPy/frappe-bench && /home/scott/Documents/FrapperPy/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/scott/Documents/FrapperPy/frappe-bench/apps/frappe 
+2022-06-16 13:55:01,036 DEBUG cd /home/scott/Documents/FrapperPy/frappe-bench/apps/frappe && yarn install
+2022-06-16 13:57:11,231 DEBUG cd frappe-bench && bench build
+2022-06-16 13:57:21,489 INFO /home/scott/anaconda3/bin/bench build
+2022-06-16 13:59:00,561 LOG setting up backups
+2022-06-16 13:59:00,610 LOG backups were set up
+2022-06-16 13:59:00,610 INFO Bench frappe-bench initialized
+2022-06-16 13:59:25,383 INFO /home/scott/anaconda3/bin/bench new-app library_management
+2022-06-16 13:59:27,020 LOG creating new app library_management
+2022-06-16 14:00:12,767 LOG Installing library_management
+2022-06-16 14:00:12,768 DEBUG cd /home/scott/Documents/FrapperPy/frappe-bench && /home/scott/Documents/FrapperPy/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/scott/Documents/FrapperPy/frappe-bench/apps/library_management 
+2022-06-16 14:00:22,251 DEBUG bench build --app library_management
+2022-06-16 14:00:22,910 INFO /home/scott/anaconda3/bin/bench build --app library_management
+2022-06-16 14:01:06,473 INFO /home/scott/anaconda3/bin/bench new-s
+2022-06-16 14:01:10,486 INFO /home/scott/anaconda3/bin/bench new-site library.test
+2022-06-16 14:01:21,102 INFO /home/scott/anaconda3/bin/bench new-site library.test
+2022-06-16 14:01:29,546 INFO /home/scott/anaconda3/bin/bench drop-site library.test --force
+2022-06-16 14:02:59,905 INFO /home/scott/anaconda3/bin/bench new-site library.test
+2022-06-16 14:08:47,672 INFO /home/scott/anaconda3/bin/bench --site library.test install-app library_management
+2022-06-16 14:08:55,144 INFO /home/scott/anaconda3/bin/bench --site library.test add-to-hosts
+2022-06-16 14:09:33,890 INFO /home/scott/anaconda3/bin/bench set-config -g developer_mode true
+2022-06-16 14:09:55,248 INFO /home/scott/anaconda3/bin/bench --site library.test set-config server_script_enabled true
+2022-06-16 14:09:59,089 INFO /home/scott/anaconda3/bin/bench start
+2022-06-16 14:10:05,014 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-16 14:10:05,300 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-16 14:10:05,321 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-16 14:10:05,384 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-16 14:10:05,426 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-16 14:10:05,478 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-16 15:07:34,373 INFO /home/scott/anaconda3/bin/bench start
+2022-06-16 15:07:45,041 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-16 15:07:45,115 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-16 15:07:45,131 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-16 15:07:45,160 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-16 15:07:45,196 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-16 15:07:45,259 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-16 19:08:24,296 INFO /home/scott/anaconda3/bin/bench start
+2022-06-16 19:09:04,302 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-16 19:09:04,434 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-16 19:09:04,466 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-16 19:09:04,466 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-16 19:09:04,575 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-16 19:09:04,639 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-16 19:21:45,982 INFO /home/scott/anaconda3/bin/bench --site library.test mariadb
+2022-06-16 20:15:10,887 INFO /home/scott/anaconda3/bin/bench start
+2022-06-16 20:15:22,674 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-16 20:15:22,681 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-16 20:15:22,686 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-16 20:15:22,693 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-16 20:15:22,694 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-16 20:15:22,741 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-16 20:15:34,594 INFO /home/scott/anaconda3/bin/bench start
+2022-06-16 20:15:37,860 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-16 20:15:38,319 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-16 20:15:38,382 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-16 20:15:38,446 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-16 20:15:38,613 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-16 20:15:38,718 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-17 12:00:04,085 INFO /home/scott/anaconda3/bin/bench --verbose --site all backup
+2022-06-17 12:38:40,604 INFO /home/scott/anaconda3/bin/bench start
+2022-06-17 12:38:49,656 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-17 12:38:49,669 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-17 12:38:49,669 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-17 12:38:49,729 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-17 12:38:49,741 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-17 12:38:49,750 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-17 15:13:40,416 INFO /home/scott/anaconda3/bin/bench start
+2022-06-17 15:13:52,237 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-17 15:13:52,351 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-17 15:13:52,374 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-17 15:13:52,467 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-17 15:13:52,579 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-17 15:13:52,640 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-17 18:00:12,755 INFO /home/scott/anaconda3/bin/bench --verbose --site all backup
+2022-06-17 18:18:33,978 INFO /home/scott/anaconda3/bin/bench start
+2022-06-17 18:19:28,856 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-17 18:19:28,857 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-17 18:19:28,859 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-17 18:19:28,861 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-17 18:19:28,860 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-17 18:19:28,868 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-17 19:08:01,051 INFO /home/scott/anaconda3/bin/bench start
+2022-06-19 12:00:27,378 INFO /home/scott/anaconda3/bin/bench --verbose --site all backup
+2022-06-20 18:01:19,268 INFO /home/scott/anaconda3/bin/bench --verbose --site all backup
+2022-06-20 19:35:54,561 INFO /home/scott/anaconda3/bin/bench start
+2022-06-20 19:36:52,314 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-20 19:36:52,445 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-20 19:36:52,609 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-20 19:36:52,835 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-20 19:36:52,856 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-20 19:36:52,951 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-21 12:00:13,691 INFO /home/scott/anaconda3/bin/bench --verbose --site all backup
+2022-06-21 14:00:35,675 INFO /home/scott/anaconda3/bin/bench start
+2022-06-21 14:01:48,062 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-21 14:01:48,156 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-21 14:01:48,183 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-21 14:01:48,200 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-21 14:01:48,202 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-21 14:01:48,250 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-21 18:00:14,631 INFO /home/scott/anaconda3/bin/bench --verbose --site all backup
+2022-06-21 18:40:53,488 INFO /home/scott/anaconda3/bin/bench start
+2022-06-21 18:41:44,243 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-21 18:41:44,303 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-21 18:41:44,420 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-21 18:41:44,453 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-21 18:41:44,493 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-21 18:41:44,788 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-22 11:03:34,581 INFO /home/scott/anaconda3/bin/bench start
+2022-06-22 11:03:47,611 INFO /home/scott/anaconda3/bin/bench serve --port 8000
+2022-06-22 11:03:47,926 INFO /home/scott/anaconda3/bin/bench watch
+2022-06-22 11:03:48,038 INFO /home/scott/anaconda3/bin/bench worker --queue short
+2022-06-22 11:03:48,087 INFO /home/scott/anaconda3/bin/bench worker --queue long
+2022-06-22 11:03:48,170 INFO /home/scott/anaconda3/bin/bench worker --queue default
+2022-06-22 11:03:48,190 INFO /home/scott/anaconda3/bin/bench schedule
+2022-06-22 11:12:19,673 INFO /home/scott/anaconda3/bin/bench --site library.test console

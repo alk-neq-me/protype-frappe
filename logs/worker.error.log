@@ -1,0 +1,748 @@
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    sock = self._connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+        return _run_code(code, main_globals, None,return _run_code(code, main_globals, None,
+
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+        exec(code, run_globals)exec(code, run_globals)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+        main()main()
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+        click.Group(commands=commands)(prog_name="bench")click.Group(commands=commands)(prog_name="bench")
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+        return self.main(*args, **kwargs)return self.main(*args, **kwargs)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+        rv = self.invoke(ctx)rv = self.invoke(ctx)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+      File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))    
+return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+        return ctx.invoke(self.callback, **ctx.params)return ctx.invoke(self.callback, **ctx.params)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+        return callback(*args, **kwargs)return callback(*args, **kwargs)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+Exception in thread     Thread-1Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level):
+
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.register_death()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+        conn = self.connection_pool.get_connection('MULTI',pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    connection.connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))    
+response = self.parse_response(block=False, timeout=timeout)redis.exceptions
+.  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+Exception in thread Exception in thread Thread-1  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+:
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Thread-1Traceback (most recent call last):
+:
+Exception in thread Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+Thread-1:
+Traceback (most recent call last):
+      File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+data = recv(self._sock, socket_read_size)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/_compat.py", line 72, in recv
+    return sock.recv(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    self.run()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    sock = self._connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+        self.run()return _run_code(code, main_globals, None,
+
+    raise err
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+        click.Group(commands=commands)(prog_name="bench")
+main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    self._read_from_socket(timeout=timeout,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError:     Connection closed by server.return self.main(*args, **kwargs)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+redis.exceptions    .ConnectionErrorreturn self.main(*args, **kwargs): 
+Connection closed by server.  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    rv = self.invoke(ctx)    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+    self.run()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+        Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+        self.register_death()self.register_death()
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+        p.execute()p.execute()
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4019, in execute
+        conn = self.connection_pool.get_connection('MULTI',return execute(conn, stack, raise_on_error)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3894, in _execute_transaction
+    connection.connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+    self.parse_response(connection, '_')
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 324, in read_response
+    raw = self._buffer.readline()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 222, in _read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+    self.register_death()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+        data = recv(self._sock, socket_read_size)data = recv(self._sock, socket_read_size)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/_compat.py", line 72, in recv
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/_compat.py", line 72, in recv
+    return sock.recv(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+        return sock.recv(*args, **kwargs)data = recv(self._sock, socket_read_size)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/_compat.py", line 72, in recv
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return sock.recv(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+        return _run_code(code, main_globals, None,return _run_code(code, main_globals, None,
+
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+        exec(code, run_globals)exec(code, run_globals)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    return _run_code(code, main_globals, None,
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    return self.main(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+        return _process_result(sub_ctx.command.invoke(sub_ctx))
+return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return self.main(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread     start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Thread-1    :
+Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+    self.run()
+      File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+self.run()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+        self.register_death()self.register_death()
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+      File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4019, in execute
+p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4019, in execute
+    self.run()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.register_death()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+    pubsub.get_message(ignore_subscribe_messages=True,  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3894, in _execute_transaction
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+      File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+return execute(conn, stack, raise_on_error)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3894, in _execute_transaction
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    self.parse_response(connection, '_')
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3977, in parse_response
+    self.parse_response(connection, '_')    
+response = self.parse_response(block=False, timeout=timeout)  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3977, in parse_response
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    result = Redis.parse_response(
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 324, in read_response
+        raw = self._buffer.readline()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+    return self._parser.can_read(timeout)return execute(conn, stack, raise_on_error)
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3894, in _execute_transaction
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    self._read_from_socket()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 222, in _read_from_socket
+        raise ConnectionError("Error while reading from socket: %s" %if not block and not conn.can_read(timeout=timeout):
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    return self._parser.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+        self._read_from_socket(timeout=timeout,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+return self._buffer and self._buffer.can_read(timeout)
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self.parse_response(connection, '_')
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 915, in parse_response
+        response = connection.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+self._read_from_socket(timeout=timeout,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    response = self._parser.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 324, in read_response
+    raw = self._buffer.readline()
+      File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    self._read_from_socket()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 222, in _read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+    result = Redis.parse_response(
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 324, in read_response
+    raw = self._buffer.readline()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 222, in _read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+    data = recv(self._sock, socket_read_size)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/_compat.py", line 72, in recv
+    return sock.recv(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+    self.register_death()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 324, in read_response
+    raw = self._buffer.readline()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 222, in _read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Exception in thread Thread-1Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+:
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    sock = self._connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)    
+response = self.parse_response(block=False, timeout=timeout)ConnectionRefusedError
+:   File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+[Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    return self._parser.can_read(timeout)
+      File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self._buffer and self._buffer.can_read(timeout)    
+return self.main(*args, **kwargs)  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    self._read_from_socket(timeout=timeout,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError    : return _process_result(sub_ctx.command.invoke(sub_ctx))Connection closed by server.
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+    self.register_death()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,    
+response = self.parse_response(block=False, timeout=timeout)  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+      File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+if not block and not conn.can_read(timeout=timeout):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self.main(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    return self._parser.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+        return _process_result(sub_ctx.command.invoke(sub_ctx))self._read_from_socket(timeout=timeout,
+
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.    ConnectionErrorreturn _process_result(sub_ctx.command.invoke(sub_ctx)): 
+Connection closed by server.  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+    self.register_death()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11000. Connection refused.
+Traceback (most recent call last):
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 198, in _read_from_socket
+    data = recv(self._sock, socket_read_size)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/_compat.py", line 72, in recv
+    return sock.recv(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/scott/anaconda3/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 204, in start_worker
+    start_worker(queue, quiet=quiet, rq_username=rq_username, rq_password=rq_password)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 205, in start_worker
+    Worker(queues, name=get_worker_name(queue_name)).work(logging_level=logging_level)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 637, in work
+    self.register_death()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 337, in register_death
+    p.execute()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 324, in read_response
+    raw = self._buffer.readline()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 256, in readline
+    self._read_from_socket()
+  File "/home/scott/Documents/FrapperPy/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 222, in _read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+Exception in thread Exception in thread 

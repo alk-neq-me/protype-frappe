@@ -1,0 +1,15 @@
+2022-06-21 15:20:33,699 ERROR frappe New Exception collected with id: 2022-06-21 15:20:33.355463-127.0.0.1-782
+Site: library.test
+Form Dict: {'doctype': 'Movie', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2022-06-21 18:44:20,655 ERROR frappe New Exception collected with id: 2022-06-21 18:44:19.916680-127.0.0.1-8e5
+Site: library.test
+Form Dict: {}
+2022-06-21 18:44:20,656 ERROR frappe New Exception collected with id: 2022-06-21 18:44:19.779175-127.0.0.1-af0
+Site: library.test
+Form Dict: {}
+2022-06-21 20:52:52,631 ERROR frappe New Exception collected with id: 2022-06-21 20:52:52.417975-127.0.0.1-729
+Site: library.test
+Form Dict: {'doctype': 'Movie', 'name': 'M00009', 'cmd': 'frappe.desk.form.load.getdoc'}
+2022-06-21 20:54:42,391 ERROR frappe New Exception collected with id: 2022-06-21 20:54:42.374531-127.0.0.1-be2
+Site: library.test
+Form Dict: {'doctype': 'Movie', 'name': 'M00010', 'cmd': 'frappe.desk.form.load.getdoc'}
